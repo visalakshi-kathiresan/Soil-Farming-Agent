@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>User Login | Soil Farming Agent</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+  <div class="form-container">
+    <h2>User Login</h2>
+    <form id="userForm">
+      <input type="email" id="email" placeholder="Email" required>
+      <div class="pw-row">
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <div class="container-link">
+        <p>Don't have an account? <a href="register.html">Register</a></p>
+        <p>Back To <a href="index.html">Home</a></p>
+      </div>
+      <button id="submit" type="submit">Login</button>
+    </form>
+  </div>
+
+  <script type="module" src="js/login.js"></script>
+  <script type="module" src="js/firebase-init.js"></script>
+
+</body>
+</html>

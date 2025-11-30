@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Admin Dashboard | Soil Farming Agent</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>Admin Dashboard</h1>
+    <button id="logoutBtn">Logout</button>
+  </header>
+
+  <main class="container">
+    <section class="panel">
+      <h3>Add Soil</h3>
+      <form id="soilForm">
+        <input id="soilName" placeholder="Soil name" required>
+        <input id="soilType" placeholder="Type (e.g., Loamy)" required>
+        <input id="soilPh" placeholder="pH" required>
+        <textarea id="soilDesc" placeholder="Short description"></textarea>
+        <button type="submit">Add Soil</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h3>Add Distributor</h3>
+      <form id="distForm">
+        <input id="distName" placeholder="Distributor name" required>
+        <input id="distContact" placeholder="Contact number" required>
+        <input id="distAddress" placeholder="Address" required>
+        <button type="submit">Add Distributor</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h3>Soils</h3>
+      <div id="soilsList"></div>
+    </section>
+
+    <section class="panel">
+      <h3>Distributors</h3>
+      <div id="distList"></div>
+    </section>
+  </main>
+
+  <script type="module" src="js/admindashboard.js"></script>
+  <script type="module" src="js/firebase-init.js"></script>
+
+</body>
+</html>

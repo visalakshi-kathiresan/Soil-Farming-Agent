@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Register | Soil Farming Agent</title>
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+  <div class="form-container">
+    <h2>Register</h2>
+    <form id="registerForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password (6+ chars)" required>
+      <button id="registerBtn" type="submit">Register</button>
+      <p>Already have an account? <a href="userlogin.html">Login</a></p>
+    </form>
+  </div>
+
+ <script type="module" src="js/firebase-init.js"></script>
+<script type="module" src="js/register.js"></script>
+</body>
+</html>
